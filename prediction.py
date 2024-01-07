@@ -60,7 +60,7 @@ camera = cv2.VideoCapture(2)
 
 print("loading model")
 
-model = tf.keras.models.load_model("baisep v2.h5")
+model = tf.keras.models.load_model("biosep v2.h5")
 
 print("model loaded")
 
@@ -76,7 +76,7 @@ while True:
 
         ret, img = camera.read()
 
-        cv2.imshow("baisep",img)
+        cv2.imshow("biosep",img)
 
         img = cv2.resize(img, (224, 224), interpolation=cv2.INTER_AREA)
 
